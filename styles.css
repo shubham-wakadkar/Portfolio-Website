@@ -82,4 +82,36 @@ h3{
         }
     }
 }
+
+.bento {
+	.bento-grid {
+		display:grid;
+		grid-gap:30px;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(2 1fr);
+        .bento-item{
+            padding: 30px;
+            background-color:#F0F0F0 ;
+            border-radius: 15px;
+            &:nth-child(1){
+                grid-column: span 5;
+                grid-row: span 4;   
+            }
+            &:nth-child(2){
+                grid-column: span 3;
+                grid-row: span 3;   
+            }
+            &:nth-child(3){
+                grid-column: span 3;
+                grid-row: span 3;   
+            }
+            &:nth-child(4){
+                grid-column: span 3;
+                grid-row: span 3;   
+            }
+
+
+        }
+    }
+}
   
